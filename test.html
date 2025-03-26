@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF avec PDF.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</head>
+<body>
+    <h1>Aperçu PDF avec PDF.js</h1>
+    <canvas id="pdf-canvas"></canvas>
+    <p id="error-message" style="color: red; display: none;">Une erreur s'est produite lors du chargement du PDF.</p>
+    <img src="source/background.jpg">
+
+    <script>
+        var url = "source/PPE3_SSO_API.pdf";
+
+        // Chargement du PDF
+        pdfjsLib.getDocument(url).promise
+            .then(function (pdfDoc_) {
+                var pdfDoc = pdfDoc_;
+                pdfDoc.getDocument.then(function (doc) {
+                    var scale = 1.5;
+                    var viewport = page.getViewport({ scale: scale });
+
+                    var canvas = document.getElementById('pdf-canvas');
+                    var context = canvas.getContext('2d');
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    
+                    doc.render({
+                        canvasContext: context,
+                        viewport: viewport
+                    });
+                });
+            })
+            .catch(function (error) {
+                document.getElementById('error-message').style.display = 'block';
+                console.error('Erreur de chargement du PDF: ', error);
+            });
+    </script>
+</body>
+</html>
