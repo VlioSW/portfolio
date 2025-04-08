@@ -1,70 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="source/style.css">
+    <link rel="icon" type="image/x-icon" href="source/logo.ico">
     <title>Portfolio - BTS SIO</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="./" class="nav_logo"></a>
-            <div class="nav_menu">
+    <header id="header">
+        <div>
+            <a href="./" class="nav_logo">
+                <img src="source/logo.jpg" id="logo">
+            </a>
+        </div>
+        
+        <div class="nav_menu">
+            <nav>
                 <ul class="nav_list">
                     <li class="nav_item"><a href="./index.html">Accueil</a></li>
                     <li class="nav_item"><a href="./about.html">Profil</a></li>
                     <li class="nav_item"><a href="./bts.html">BTS SIO</a></li>
                     <li class="nav_item"><a href="./contact.html">Contact</a></li>
                 </ul>
-            </div>
-            <i class="" id="theme_button">
+            </nav>
+        </div>
 
-            </i>
-        </nav>
+        <div>
+            <button class="button_theme" id="theme_button">
+                <img src="source/moon.svg" id="themeImg" style="width: 20px;">
+            </button>
+        </div>
+        
     </header>
 
-    <section id="bts" class="bts section">
-        <h2>Le BTS SIO</h2>
-        <p>définition + spécialités</p>
-    </section>
+    <main>
+        <div class="container">
+            <section id="bts">
+                <h2 class="bts_title">Le BTS SIO</h2>
+                <p class="bts_info">définition + spécialités</p>
+            </section>
+        
+            <section id="e5">
+                <h2 class="bts_title">L'épreuve E5 (40 minutes)</h2>
+                <p class="bts_info">définition + attendu</p>
+                <div class="items_container">
+                    <div class="item_content">
+                        <h3 class="bts_item">PPE 1 : Site personnel</h3>
+                        <a class="discover" href="source/PPE1_HTML.pdf">Découvrir</a>
+                        <embed class="pdf" src="source/PPE1_HTML.pdf" width="25%" height="500px"></embed>
+                    </div>
+                    <div class="item_content">
+                        <h3 class="bts_item">PPE 2 : Appli Resa</h3>
+                        <a class="discover" href="source/PPE2_PHP.pdf">Découvrir</a><br>
+                        <a class="discover" href="https://w3.tholdi.com">Lien site</a>
+                        <embed class="pdf" src="source/PPE2_PHP.pdf" width="25%" height="500px"></embed>
+                    </div>
+                    <div class="item_content">
+                        <h3 class="bts_item">PPE 3 : Gest Container</h3>
+                        <a class="discover" href="source/PPE3_SSO_API.pdf">Découvrir</a>
+                        <embed class="pdf" src="source/PPE3_SSO_API.pdf" width="25%" height="500px"></embed>
+                    </div>
+                    <div class="item_content">
+                        <h3 class="bts_item">PPE 4 : Mobile</h3>
+                        <a class="discover" href="source/PPE4_HA_MOBILE.pdf">Découvrir</a>
+                        <embed class="pdf" src="source/PPE4_HA_MOBILE.pdf" width="25%" height="500px"></embed>
+                    </div>
+                    <div class="item_content">
+                        <h3 class="bts_item">TABLEAU DE SYNTHESE</h3>
+                        <a class="discover" href="source/tableau_synthese.pdf">Découvrir</a>
+                        <embed class="pdf" src="source/tableau_synthese.pdf"></embed>
+                    </div>
+                    <div class="item_content">
+                        <h3 class="bts_item">PRESENTATION</h3>
+                        <a class="discover" href="source/presentation.pdf">Découvrir</a>
+                        <embed class="pdf" src="source/presentation.pdf"></embed>
+                    </div>
+                </div>
 
-    <section id="e5" class="e5 section">
-        <h2>L'épreuve E5 (40 minutes)</h2>
-        <p>définition + attendu</p>
-        <div class="items_container">
-            <div class="item_content">
-                <h3>PPE 1 : </h3>
-                <a href="source/PPE1_HTML.pdf">Découvrir</a>
-                <embed class="pdf" src="source/PPE1_HTML.pdf" width="25%" height="500px"></embed>
-            </div>
-            <div class="item_content">
-                <h3>PPE 2 : </h3>
-                <a href="source/PPE2_PHP.pdf">Découvrir</a>
-                <embed class="pdf" src="source/PPE2_PHP.pdf" width="25%" height="500px"></embed>
-            </div>
-            <div class="item_content">
-                <h3>PPE 3 : </h3>
-                <a href="source/PPE3_SSO_API.pdf">Découvrir</a>
-                <embed class="pdf" src="source/PPE3_SSO_API.pdf" width="25%" height="500px"></embed>
-            </div>
-            <div class="item_content">
-                <h3>PPE 4 : </h3>
-                <a href="source/PPE4_HA_MOBILE.pdf">Découvrir</a>
-                <embed class="pdf" src="source/PPE4_HA_MOBILE.pdf" width="25%" height="500px"></embed>
-            </div>
-            <div class="item_content">
-                <h3>TABLEAU DE SYNTHESE</h3>
-                <a href="source/tableau_synthese.pdf">Découvrir</a>
-                <embed class="pdf" src="source/tableau_synthese.pdf" width="25%" height="500px"></embed>
-            </div>
-            <div class="item_content">
-                <h3>PRESENTATION</h3>
-                <a href="source/presentation.pdf">Découvrir</a>
-                <embed class="pdf" src="source/presentation.pdf" width="25%" height="500px"></embed>
-            </div>
+                <h2 class="bts_title">La veille technologique</h2>
+                <p class="bts_info">définition + sujet personnel</p>
+                <div class="vt_container">
+
+                </div>
+
+                <h2 class="bts_title">Stages</h2>
+                <p class="bts_info">définition</p>
+                <div class="stages_container">
+                    <div class="stage_item">
+                        <img src="source/img/annee1.png">
+                        <a class="discover" href="https://scarlet-narwhal-b09.notion.site/Compte-rendu-de-stage-BTS-1-re-ann-e-d3d59d8099124c8b82abc18cc6196093?pvs=4">Lien Notion</a>
+                    </div>
+                    <div class="stage_item">
+                        <img src="source/img/annee2.png">
+                        <a class="discover" href="https://scarlet-narwhal-b09.notion.site/Compte-rendu-de-stage-BTS-2nde-ann-e-153c893befc48049a439cb2ec5c992ed?pvs=4">Lien Notion</a>
+                    </div>
+                </div>
+
+                <h2 class="bts_title" style="background-color: #000;">Gérer le patrimoine informatique</h2>
+                <p class="bts_info" style="background-color: #000;">▸ Recenser et identifier les ressources numériques <br>
+                    ▸
+                     Exploiter des référentiels, normes et standards adoptés par le prestataire informatique <br>
+                     ▸
+                     Mettre en place et vérifier les niveaux d'habilitation associés à un service <br>
+                     ▸
+                     Vérifier les conditions de la continuité d'un service informatique <br>
+                     ▸
+                     Gérer des sauvegardes <br>
+                     ▸
+                     Vérifier le respect des règles d'utilisation des ressources </p>
+
+                <div class="doc">
+                    <div class="doc_item">
+                        <img src="source/img/bitbucket.png">
+                        <p class="doc_desc">Gestion de versions PPE2</p>
+                    </div>
+                    <div class="doc_item">
+                        <img src="source/img/flux.png">
+                        <a href="https://scarlet-narwhal-b09.notion.site/Bloquer-d-bloquer-les-flux-Ubiflow-89b991003fc2472bb011b6cba98971d9" class="doc_desc">Documentation de flux Ubiflow</a>
+                    </div>
+                </div>
+
+                <h2 class="bts_title" style="background-color: #000;">Développer la présence en ligne de l'organisation</h2>
+                <p class="bts_info" style="background-color: #000;">▸ Participer à la valorisation de l'image de l'organisation sur les 
+                    médias numériques en tenant compte du cadre juridique et des enjeux économiques <br>
+                     ▸
+                     Référencer les services en ligne de l'organisation et mesurer leur visibilité <br>
+                     ▸
+                     Participer à l'évolution d'un site Web exploitant les données de l'organisation </p> 
+
+                <div class="doc">
+                    <div class="doc_item">
+                        <img src="source/img/oralia_estimateur.png">
+                        <p class="doc_desc">Ajout de fonctionnalité du site Oralia.fr</p>
+                    </div>
+                    <div class="doc_item">
+                        <img src="source/img/accueil_ppe3.png">
+                        <p class="doc_desc">Ajout d'une application métier pour Tholdi</p>
+                    </div>
+                </div>
+
+                <h2 class="bts_title" style="background-color: #000;">Travailler en mode projet</h2>
+                <p class="bts_info" style="background-color: #000;">▸ Analyser les objectifs et les modalités d'organisation d'un projet <br>
+                     ▸
+                     Planifier les activités <br>
+                     ▸
+                     Évaluer les indicateurs de suivi d'un projet et analyser les écarts </p> 
+
+                <div class="doc">
+                    <div class="doc_item">
+                        <img src="source/img/trello.png">
+                        <p class="doc_desc">Trello PPE2</p>
+                    </div>
+                </div>
+
+                <h2 class="bts_title" style="background-color: #000;">Organiser son développement professionnel</h2>
+                <p class="bts_info" style="background-color: #000;">▸ Mettre en place son environnement d'apprentissage personnel <br>
+                     ▸
+                     Mettre en œuvre des outils et stratégies de veille informationnelle <br>
+                     ▸
+                     Gérer son identité professionnelle <br> 
+                     ▸
+                     Développer son projet professionnel </p>
+
+                <div class="doc">
+                    <div class="doc_item">
+                        <embed class="pdf" src="source/files/pix.pdf"></embed>
+                        <p class="doc_desc">Certification PIX délivrée le 13 février dernier</p>
+                    </div>
+                    <div class="doc_item">
+                        <embed class="pdf" src="source/files/anssi.pdf"></embed>
+                        <p class="doc_desc">Attestation ANSSI obtenue en mars 2024</p>
+                    </div>
+                    <div class="doc_item">
+                        <img src="source/img/badge_mooc_impacts.png">
+                        <p class="doc_desc">Badge Fun-MOOC</p>
+                    </div>
+                    <div class="doc_item">
+                        <img src="source/img/badge_mooc_fake_news.png">
+                        <p class="doc_desc">Badge Fun-MOOC</p>
+                    </div>
+                    <div class="doc_item">
+                        <img src="source/img/badge_mooc_metiers.png">
+                        <p class="doc_desc">Badge Fun-MOOC</p>
+                    </div>
+                    <div class="doc_item">
+                        <img src="source/img/badge_mooc_ia.png">
+                        <p class="doc_desc">Badge Fun-MOOC</p>
+                    </div>
+                    <div class="doc_item">
+                        <img src="source/img/openclassrooms.png">
+                        <p class="doc_desc">Cours suivis OpenClassRooms</p>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
+    </main>
+
+    <footer id="footer">
+        <div class="rights">
+            <p>&copy; 2025 Tous droits réservés.</p>
+        </div>
+        <div class="by">
+            <p>Développé par Vincent Liotta</p>
+        </div>
+        
+        <div class="law">
+            <a class="law" href="source/mentions-legales">Mentions légales</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

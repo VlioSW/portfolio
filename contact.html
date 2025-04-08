@@ -1,30 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="source/style.css">
+    <link rel="icon" type="image/x-icon" href="source/logo.ico">
     <title>Portfolio - Contact</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="./" class="nav_logo"></a>
-            <div class="nav_menu">
+<body class="dark_theme">
+    <header id="header">
+        <div>
+            <a href="./" class="nav_logo">
+                <img src="source/logo.jpg" id="logo">
+            </a>
+        </div>
+        
+        <div class="nav_menu">
+            <nav>
                 <ul class="nav_list">
                     <li class="nav_item"><a href="./index.html">Accueil</a></li>
                     <li class="nav_item"><a href="./about.html">Profil</a></li>
                     <li class="nav_item"><a href="./bts.html">BTS SIO</a></li>
                     <li class="nav_item"><a href="./contact.html">Contact</a></li>
                 </ul>
-            </div>
-            <i class="" id="theme_button">
+            </nav>
+        </div>
 
-            </i>
-        </nav>
+        <div>
+            <button class="button_theme" id="theme_button">
+                <img src="source/moon.svg" style="width: 20px;">
+            </button>
+        </div>
     </header>
 
-    <h1>En chantier</h1>
+    <main>
+        <div class="container">
+            <section id="contact">
+                <h2 class="contact_title">En chantier</h2>
+                <div class="contact_container">
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer style="position: fixed;" id="footer">
+        <div class="rights">
+            <p>&copy; 2025 Tous droits réservés.</p>
+        </div>
+        <div class="by">
+            <p>Développé par Vincent Liotta</p>
+        </div>
+        
+        <div class="law">
+            <a class="law" href="source/mentions-legales">Mentions légales</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
